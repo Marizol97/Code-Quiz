@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="outside-box">
+
+        <div class="top-bar">
+            <button id="view">View High Score</button>
+            <time> Time: 00</time>
+        </div>
+    </section>
+ <!-- inside box -->
+    <section class="card" id="prompt">
+         
+        <header class="card-header" id="font">
+            <h1>Coding Quiz Challenge</h1>
+        </header>
+
+        <div class="card-body">
+            <p> Try to answer the following code-related questions within the time limit.
+                Keep in mind that the incorrect answers will penalize your score/time by ten seconds!   
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
+    </section>
+<!-- quiz begins -->
+    <main>
+<!-- part 2 -->
+        <section class="card-questions", id="question-section">
+
+          <header class="card-header">
+             <h2 id="question"></h2>
+          </header>
+        
+          <div id="options"></div>
+        </section>
+        <!-- Part 2a, scores calculated and initials saved -->
+        <section class="quiz-ends"  id="textbox">
+            <h2 id="all-done">All done!</h2>
+            <p id="score"></p>
+                 <div class="middle">
+                     <p class="" id="command">Enter initials:</p>
+                     <input type="text" id="intials" value="">
+                     <button id="submit">Submit</button>
+                 </div>
+        </section>
+        <!-- part 2b, results are shown from all attempts -->
+        <section class="High-scores" id="last-page">
+            <h2 id="title">High Scores</h2>
+            <ul id="list"></ul>
+            <div class="buttons">
+                 <button id="goHome">Go Home</button>
+                 <button id="clearHighScores">Clear High Scores</button>
+            </div>
+        </section>
+     
+    </main>
+    <script src= "script.js"></script>
+
+</body>
